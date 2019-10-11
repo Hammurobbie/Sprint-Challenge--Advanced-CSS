@@ -2,6 +2,10 @@
 
 .home {
 
+  .curve{
+    .custom-img();
+  }
+
   .intro {
 
     h2 {
@@ -19,11 +23,19 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone{
+      justify-content: center;
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone{
+        width: 90%;
+      }
     }
   }
 
@@ -46,8 +58,17 @@
     display: flex;
     justify-content: center;
 
+    @media @phone{
+      padding: 20px 20px;
+      margin-top: 25px;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone{
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +79,19 @@
       }
 
       .btn {
+        .custom-btn(@btn-bg-color, white)
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone{
+        width: 100%;
+        padding-bottom: 5%;
+        margin-left: 0;
+      }
       
       img {
         width: 100%;
