@@ -1,1 +1,42 @@
 // Navigation code here
+nav{
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: @nav-bg;
+    opacity: .85;
+    border: 1px solid @nav-border;
+    color: @nav-font;
+    padding: 4px;
+    font-size: 3.5rem;
+
+    div{
+        display: flex;
+        justify-content: space-evenly;
+        width: 40%;
+        padding: 8px;
+        
+
+        a{
+            color: @nav-font;
+            text-decoration: none;
+            font-size: 1.5rem;
+
+            &:hover{
+                color: skyblue;
+                transition: color 0.5s ease;
+            }
+        }
+    }
+
+    @media @phone{
+        div{
+            width: 100%;
+        }
+    }
+
+    
+}
